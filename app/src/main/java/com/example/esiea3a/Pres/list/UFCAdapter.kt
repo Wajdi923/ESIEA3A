@@ -42,7 +42,8 @@ class UFCAdapter(private var dataSet: List<Fighter>) :
 
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
-        viewHolder.textView.text = dataSet[position]
+        val fighter : Fighter = dataSet[position]
+        viewHolder.textView.text = fighter.name
     }
 
     // Return the size of your dataset (invoked by the layout manager)

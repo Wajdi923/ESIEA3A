@@ -37,10 +37,10 @@ class UFCListFragment : Fragment() {
             adapter=this@UFCListFragment.adapter
         }
 
-        val ulist : ArrayList<String> = arrayListOf<String>().apply{
-            add("Jon Jones")
-            add("Khabib Nurmagomedov")
-            add("Conor McGregor")
+        val ulist : ArrayList<Fighter> = arrayListOf<Fighter>().apply{
+            add(Fighter("Jon Jones"))
+            add(Fighter("Khabib Nurmagomedov"))
+            add(Fighter("Conor McGregor"))
 
         }
 
